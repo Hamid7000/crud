@@ -10,10 +10,13 @@ use Illuminate\Support\Facades\File;
 
 class DashboardController extends Controller
 {
+    public function graph() {
+        return view('admin.graph');
+    }
 
     public function index_() {
         $employees = Employee::orderby('id','ASC')->paginate(5);
-        return view('admin.dashboard',['employees' => $employees]);
+        return view('admin.master',['employees' => $employees]);
     }
    
     public function index(){

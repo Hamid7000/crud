@@ -33,4 +33,4 @@ route::get('/employees/{employee}/edit',[DashboardController::class,'edit'])->na
 route::put('/employees/{employee}',[DashboardController::class,'update'])->name('employees.update');
 route::delete('/employees/{employee}',[DashboardController::class,'destroy'])->name('employees.destroy');
 
-
+route::get('/graph',[DashboardController::class,'graph'])->name('graph');

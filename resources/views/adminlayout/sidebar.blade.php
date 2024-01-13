@@ -8,7 +8,7 @@
         <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
             <li class="dropdown">
-                <a href="{{ route('employees.index') }}"><i class="fas fa-fire"></i><span>Employees</span></a>
+                <a href="{{ route('dashboard') }}"><i class="fas fa-fire"></i><span>Employees</span></a>
               
             </li>
            

@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-<title>Blank Page &mdash; CodiePie</title>
+<title>@yield('title') &mdash; CodiePie</title>
 
 <!-- General CSS Files -->
 <link rel="stylesheet" href="assets/admin/modules/bootstrap/css/bootstrap.min.css">
@@ -16,4 +16,5 @@
 <!-- Template CSS -->
 <link rel="stylesheet" href="assets/admin/css/style.min.css">
 <link rel="stylesheet" href="assets/admin/css/components.min.css">
+@stack('css')
 </head>
